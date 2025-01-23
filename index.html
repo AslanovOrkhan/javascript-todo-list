@@ -12,19 +12,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
     <div class="wrapper">
       <h3 class="title">todo app</h3>
       <form>
-        <input type="text" placeholder="Add your new todo" />
-        <div>
+        <input type="text" placeholder="Add your new todo" class="input" />
+        <div class="add-btn">
           <i class="fa-solid fa-plus"></i>
         </div>
       </form>
       <ul class="list">
-        <li>
+        <!-- <li>
           <span> hello pf402 </span>
           <div class="list-btn">
             <button id="check-btn"><i class="fa-solid fa-check"></i></button>
@@ -71,13 +72,30 @@
             <button id="trash-btn"><i class="fa-solid fa-trash"></i></button>
             <button id="edit-btn"><i class="fa-solid fa-edit"></i></button>
           </div>
-        </li>
+        </li>  -->
       </ul>
       <div class="remove-container">
-        <p>You have <span>no</span> pending tasks</p>
-        <button>clear all</button>
+        <p>You have <span id="pending_count">no</span> pending tasks</p>
+        <button class="clear_button">clear all</button>
       </div>
     </div>
-    <script src="app.js"></script>
+    <div class="modal" id="editModal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <label for="editInput">Yeni başlıq:</label>
+        <input type="text" id="editInput" />
+        <button id="saveEditBtn">Yadda saxla</button>
+      </div>
+    </div>
+    <!-- Clear confirmation modal -->
+    <div class="clear-modal">
+      <div class="clear-modal-content">
+        <p>Əminsiniz? Bütün ToDo-ları silmək istəyirsiniz?</p>
+        <button class="clear-confirm-btn">Bəli</button>
+        <button class="clear-cancel-btn">Xeyr</button>
+      </div>
+    </div>
+
+    <script type="module" src="assets/js/app.js"></script>
   </body>
 </html>
