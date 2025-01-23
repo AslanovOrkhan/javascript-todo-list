@@ -4,11 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>todo list</title>
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script src="app.js">
-        
-    </script>
+    <div class="wrapper">
+      <h3 class="title">todo app</h3>
+      <form>
+        <input type="text" placeholder="Add your new todo" />
+        <div>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </form>
+      <ul class="list">
+        <li>
+          <span> hello pf402 </span>
+          <div class="list-btn">
+            <button id="check-btn"><i class="fa-solid fa-check"></i></button>
+            <button id="trash-btn"><i class="fa-solid fa-trash"></i></button>
+            <button id="edit-btn"><i class="fa-solid fa-edit"></i></button>
+          </div>
+        </li>
+        <li>
+          <span> hello pf402 </span>
+          <div class="list-btn">
+            <button id="check-btn"><i class="fa-solid fa-check"></i></button>
+            <button id="trash-btn"><i class="fa-solid fa-trash"></i></button>
+            <button id="edit-btn"><i class="fa-solid fa-edit"></i></button>
+          </div>
+        </li>
+        <li>
+          <span> hello pf402 </span>
+          <div class="list-btn">
+            <button id="check-btn"><i class="fa-solid fa-check"></i></button>
+            <button id="trash-btn"><i class="fa-solid fa-trash"></i></button>
+            <button id="edit-btn"><i class="fa-solid fa-edit"></i></button>
+          </div>
+        </li>
+        <li>
+          <span> hello pf402 </span>
+          <div class="list-btn">
+            <button id="check-btn"><i class="fa-solid fa-check"></i></button>
+            <button id="trash-btn"><i class="fa-solid fa-trash"></i></button>
+            <button id="edit-btn"><i class="fa-solid fa-edit"></i></button>
+          </div>
+        </li>
+        <li>
+          <span> hello pf402 </span>
+          <div class="list-btn">
+            <button id="check-btn"><i class="fa-solid fa-check"></i></button>
+            <button id="trash-btn"><i class="fa-solid fa-trash"></i></button>
+            <button id="edit-btn"><i class="fa-solid fa-edit"></i></button>
+          </div>
+        </li>
+        <li>
+          <span> hello pf402 </span>
+          <div class="list-btn">
+            <button id="check-btn"><i class="fa-solid fa-check"></i></button>
+            <button id="trash-btn"><i class="fa-solid fa-trash"></i></button>
+            <button id="edit-btn"><i class="fa-solid fa-edit"></i></button>
+          </div>
+        </li>
+      </ul>
+      <div class="remove-container">
+        <p>You have <span>no</span> pending tasks</p>
+        <button>clear all</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>
