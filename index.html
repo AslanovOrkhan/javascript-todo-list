@@ -75,10 +75,11 @@
         </li>  -->
       </ul>
       <div class="remove-container">
-        <p>You have <span id="pending_count">no</span> pending tasks</p>
+        <p>You have <span class="pending_count">no</span> pending tasks</p>
         <button class="clear_button">clear all</button>
       </div>
     </div>
+    <!-- Edit  modal -->
     <div class="modal" id="editModal">
       <div class="modal-content">
         <span class="close">&times;</span>
@@ -87,12 +88,15 @@
         <button id="saveEditBtn">Yadda saxla</button>
       </div>
     </div>
-    <!-- Clear confirmation modal -->
+    
+    <!-- Clear  modal -->
     <div class="clear-modal">
       <div class="clear-modal-content">
-        <p>Əminsiniz? Bütün ToDo-ları silmək istəyirsiniz?</p>
-        <button class="clear-confirm-btn">Bəli</button>
-        <button class="clear-cancel-btn">Xeyr</button>
+        <p>Do you want to delete all ToDo's?</p>
+        <div>
+          <button class="clear-confirm-btn">Yes</button>
+          <button class="clear-cancel-btn">No</button>
+        </div>
       </div>
     </div>
 
